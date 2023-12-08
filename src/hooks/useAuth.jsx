@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -15,7 +16,7 @@ const useAuth = (code) => {
                 } = await axios.post(`https://jukebox-backend-production-dd99.up.railway.app/login`, {
                     code,
                 });
-                console.log('Response:', response.data);
+                //console.log('Response:', response.data);
                 setAccessToken(access_token);
                 setRefreshToken(refresh_token);
                 setExpiresIn(expires_in);
