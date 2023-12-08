@@ -11,7 +11,7 @@ const useAuth = (code) => {
             try {
                 const {
                     data: { access_token, refresh_token, expires_in },
-                } = await axios.post(`https://jukebox-backend-production-dd99.up.railway.app/login`, {
+                } = await axios.post(`https://jukebox-production.up.railway.app/login`, {
                     code,
                 });
                 setAccessToken(access_token);
@@ -30,7 +30,7 @@ const useAuth = (code) => {
             try {
                 const {
                     data: { access_token, expires_in },
-                } = await axios.post(`https://jukebox-backend-production-dd99.up.railway.app/refresh`, {
+                } = await axios.post(`https://jukebox-production.up.railway.app/refresh`, {
                     refreshToken,
                 });
                 setAccessToken(access_token);
