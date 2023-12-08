@@ -9,6 +9,7 @@ const useAuth = (code) => {
     useEffect(() => {
         (async () => {
             try {
+                console.log("trying");
                 const {
                     data: { access_token, refresh_token, expires_in },
                 } = await axios.post(`https://jukebox-backend-production-dd99.up.railway.app/login`, {
