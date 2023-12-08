@@ -10,13 +10,11 @@ const useAuth = (code) => {
     useEffect(() => {
         (async () => {
             try {
-                console.log("trying");
                 const {
                     data: { access_token, refresh_token, expires_in },
                 } = await axios.post(`https://jukebox-backend-production-dd99.up.railway.app/login`, {
                     code,
                 });
-                //console.log('Response:', response.data);
                 setAccessToken(access_token);
                 setRefreshToken(refresh_token);
                 setExpiresIn(expires_in);
