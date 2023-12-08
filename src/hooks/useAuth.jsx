@@ -12,7 +12,7 @@ const useAuth = (code) => {
             try {
                 const {
                     data: { access_token, refresh_token, expires_in },
-                } = await axios.post(`https://jukebox-backend-production-dd99.up.railway.app/login`, {
+                } = await axios.post("https://jukebox-backend-production-dd99.up.railway.app/login", {
                     code,
                 });
                 setAccessToken(access_token);
