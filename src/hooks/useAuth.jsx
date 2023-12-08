@@ -14,11 +14,13 @@ const useAuth = (code) => {
                 } = await axios.post(`https://jukebox-backend-production-dd99.up.railway.app/login`, {
                     code,
                 });
+                console.log('Response:', response.data);
                 setAccessToken(access_token);
                 setRefreshToken(refresh_token);
                 setExpiresIn(expires_in);
                 window.history.pushState({}, null, '/');
-            } catch {
+            } catch (error){
+                console.log("Error: ", error);
                 //window.location = '/';
             }
         })();
