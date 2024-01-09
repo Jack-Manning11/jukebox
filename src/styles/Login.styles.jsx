@@ -42,3 +42,22 @@ export const Description = styled.p`
     font-size: 18px;
     font-family: "Avenir";
 `
+
+export const NavBar = styled.div`
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+`
+
+export const NavLink = styled.a`
+    margin: 1vw 1vw 0 1vw;
+    background-color: rgb(239, 223, 223);
+    color: rgb(128,0,0);
+    border-radius: 10%;
+    padding: 1vw;
+    text-decoration: none;
+    &:hover {
+        background-color: rgb(128,0,0);
+        color: rgb(239, 223, 223);
+  }
+`
