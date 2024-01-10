@@ -29,7 +29,6 @@ const Login = () => {
                 <Title>Breakup Stereo</Title>
                 <Description>This musical interface was made as an installation looking at the idea of breakup music. A seamless jukebox that allows users to interact with and listen to what others have determined are breakup songs to them. Logging in will authorize this application to create a player instance connected to your spotify and play songs from our curated playlist. Login below to get started. Created by Jack Manning and Anthony Pinter</Description>
             </LoginInfo>
-            <img src={images[0]} alt="image cover test"></img>
             <LoginButton>
                 <LoginLink href={AUTH_URL}>Login with Spotify</LoginLink>
             </LoginButton>
