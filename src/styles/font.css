@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Avenir";
+        src: local("Avenir"),
+            url("../fonts/Avenir.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "AvenirBold";
+        src: local("AvenirBold"),
+            url("../fonts/AvenirBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "AvenirBlack";
+        src: local("AvenirBlack"),
+            url("../fonts/AvenirBlack.otf") format("opentype");
+}
