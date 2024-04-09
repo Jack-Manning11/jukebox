@@ -140,7 +140,7 @@ const Dashboard = ({ code }) => {
                     songHandling(allTracks);
                 }
             } catch (err) {
-                console.log("Error fetching tracks: ", err);
+                console.log("Error fetching the tracks: ", err);
             }
         };
 
