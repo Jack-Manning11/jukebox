@@ -14,10 +14,10 @@ const Details = ({ track }) => {
     return (
         <DetailsContainer>
             <SongInfoCard>
-                <SongImage src={track.track?.album.images[0].url} alt={track.track?.name}/>
-                <TrackName className='trackName'>{track.track?.name}</TrackName>
-                <ArtistName>{track.track?.artists.map((artist) => artist.name).join(", ")}</ArtistName>
-                <AlbumName>{track.track?.album.name}</AlbumName>
+                <a><SongImage src={track.track?.album.images[0].url} alt={track.track?.name}/></a>
+                <a href={track.track?.external_urls?.spotify}><TrackName className='trackName'>{track.track?.name}</TrackName></a>
+                <a><ArtistName>{track.track?.artists.map((artist) => artist.name).join(", ")}</ArtistName></a>
+                <a><AlbumName>{track.track?.album.name}</AlbumName></a>
             </SongInfoCard>
             <Memory id={track?.memoryId}></Memory>
         </DetailsContainer>
