@@ -152,7 +152,7 @@ const Dashboard = ({ code }) => {
         for(let i = 0; i < allTracks.length; i++){
             allTracks[i].memoryId = i;
         }
-        console.log(allTracks);
+        console.log(allTracks[0].track.external_urls.spotify);
         setSongs(allTracks);
     }
 
