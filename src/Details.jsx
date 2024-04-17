@@ -10,6 +10,7 @@ import {
 import Memory from './Memory';
 
 const Details = ({ track }) => {
+    console.log(track);
     return (
         <DetailsContainer>
             <SongInfoCard>
