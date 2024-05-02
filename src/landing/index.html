@@ -189,21 +189,10 @@
             <a class="nav-link on-page" href="index.html">HOME</a>
             <a class="nav-link" href="about.html">ABOUT</a>
             <a class="nav-link" href="https://docs.google.com/forms/d/1KInCehTTZ-uSC-_DHUe5xv85l8g6AJ5Noz1d7AtyI0Y/viewform?edit_requested=true">CONTRIBUTE</a>
-            <!--<a class="nav-link" href="JACKPUTALINKHEREPLEASE">Jukebox</a>-->
-            <!--<a class="play-button-a" href="thisGoesToJukebox"><p class="triangle-right"></p><span class="dot"></span></a>-->
             <a href="#" class="round-button"><i class="fa fa-play fa-1x"></i></a>
         </div>
     </div> 
-    <!-- <div class="text-box">
-        <p class="text">Text goes here</p>
-    </div> -->
-    <!--<div class="scrolling-banner">
-        <div class="banner-content">
-           
-        </div>-->
 <div class="image-container" id="imageContainer">
-    <!-- Your images go here -->
-    <!-- Example image tag: <img class="image" src="path/to/your/image.jpg" alt="Image"> -->
     <img class="album-cover" src="0.jpg" alt="album cover test">
     <img class="album-cover" src="1.jpg" alt="album cover test">
     <img class="album-cover" src="2.jpg" alt="album cover test">
@@ -354,7 +343,6 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        // Get all image elements
         const images = document.querySelectorAll('.album-cover');
         const imageContainer = document.querySelector('.image-container');
         const memories = ['Us driving together, and the tumultuous nature of the relationship (on again off again)',
@@ -525,33 +513,27 @@
         'My ex cheated on me and kept trying to come back and then would go back to the other girl when I wouldn\'t let him and it was a cycle',
         'This was the first song that made me happy after I was dumped'];
         
-        // Function to select a random image
         function getRandomImage() {
             const index = Math.floor(Math.random() * images.length);
             return images[index];
         }
 
-        // Function to calculate the maximum scale factor based on available space
         function calculateMaxScale(image) {
             const containerWidth = image.parentElement.clientWidth;
             const imageWidth = image.clientWidth;
             return containerWidth / imageWidth;
         }
 
-        // Function to check if enlarging the image would go off-screen
         function isOffScreen(image) {
             const rect = image.getBoundingClientRect();
             return rect.left < 0 || rect.right > window.innerWidth;
         }
 
-        // Function to animate an image
         function animateImage(image, container) {
             const maxScale = calculateMaxScale(image);
             
-            // Random scale factor between 1 and the calculated max scale
             const scaleFactor = Math.random() * (maxScale - 1) + 1;
 
-            // Check if enlarging the image would go off-screen
             if (isOffScreen(image)) {
                 image.classList.remove('enlarged');
             } else {
@@ -559,52 +541,36 @@
             }
             container.classList.add('transparent');
 
-            // Reset the size after 3 seconds (adjust as needed)
             setTimeout(function () {
                 image.classList.remove('enlarged');
                 container.classList.remove('transparent');
 
-                // Repeat the animation after a delay (adjust as needed)
                 setTimeout(function () {
                     animateImage(getRandomImage(), imageContainer);
                 }, 1000);
             }, 7000);
         }
 
-        // Run the animation on page load
         animateImage(getRandomImage(), imageContainer);
        
-        // Function to pick a random string and update the banner content
         function updateBannerText() {
-            // Get a random index from the array
             const randomIndex = Math.floor(Math.random() * memories.length);
 
-            // Get the random string
             const randomString = memories[randomIndex];
 
-            // Display the result in the HTML element with the class "banner-content"
             const bannerContent = document.querySelector('.banner-content');
             bannerContent.textContent = randomString;
 
-            // Calculate the duration based on the width of the text (adjust the factor as needed)
             const textWidth = bannerContent.offsetWidth;
-            const durationFactor = 0.5; // Adjust this factor to control the animation speed
+            const durationFactor = 0.5;
             const animationDuration = textWidth * durationFactor / 75;
 
-        // Apply the animation duration inline
         bannerContent.style.animationDuration = `${animationDuration}s`;
         }    
 
-        // Call the function initially
         updateBannerText();
-
-        // Set up an interval to run the function every 5 seconds (adjust as needed)
         setInterval(updateBannerText, 10000);
     });
-
-
-    
 </script>
-
 </body>
 </html>
