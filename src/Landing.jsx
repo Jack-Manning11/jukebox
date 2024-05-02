@@ -1,6 +1,8 @@
 import React from 'react';
 import './landing.css'; // Import the CSS file
 
+//<a href="#" className="round-button"><i className="fa fa-play fa-1x"></i></a>
+
 const Landing = () => {
   return (
     <>
@@ -10,7 +12,7 @@ const Landing = () => {
           <a className="nav-link on-page" href="index.html">HOME</a>
           <a className="nav-link" href="about.html">ABOUT</a>
           <a className="nav-link" href="https://docs.google.com/forms/d/1KInCehTTZ-uSC-_DHUe5xv85l8g6AJ5Noz1d7AtyI0Y/viewform?edit_requested=true">CONTRIBUTE</a>
-          <a href="#" className="round-button"><i className="fa fa-play fa-1x"></i></a>
+          
         </div>
       </div> 
       <div className="image-container" id="imageContainer">
