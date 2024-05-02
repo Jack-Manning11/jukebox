@@ -242,7 +242,7 @@ const Dashboard = ({ code }) => {
                 </DetailsBox>
             ): null}
             <Info>
-                <a href={process.env.REACT_APP_REDIRECT_URI}>?</a>
+                <a href="https://jackmanning.me/jukebox/index.html">?</a>
             </Info>
         </DashBoardContainer>
     );
