@@ -1,25 +1,28 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
-import Landing from './Landing';
-import About from './About';
-import Dashboard from './Dashboard';
-import Login from './Login';
-import { Container } from './styles/App.styles';
+import { Link, Route } from 'wouter';
+import Home from './pages/Home';
+import About from './pages/About';
+import Jukebox from './pages/Jukebox';
 
-const App = () => {
-    const code = new URLSearchParams(window.location.search).get('code');
-
-    return (
-        <Container>
-            <Switch>
-                <Route exact path="/" component={Landing} />
-                <Route path="/about" component={About} />
-                <Route path="/jukebox">
-                    {code ? <Dashboard code={code} /> : <Login />}
-                </Route>
-            </Switch>
-        </Container>
-    );
-};
+const App = () => (
+  <div>
+    <nav>
+      <ul>
+        <li>
+          <Link href="/">Home</Link>
+        </li>
+        <li>
+          <Link href="/about">About</Link>
+        </li>
+        <li>
+          <Link href="/jukebox">Jukebox</Link>
+        </li>
+      </ul>
+    </nav>
+    <Route path="/" component={Home} />
+    <Route path="/about" component={About} />
+    <Route path="/jukebox" component={Jukebox} />
+  </div>
+);
 
 export default App;
