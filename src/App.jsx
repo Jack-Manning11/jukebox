@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, Route } from 'wouter';
-import Home from './pages/Home';
-import About from './pages/About';
-import Jukebox from './pages/Jukebox';
+import Home from './Home';
+import About from './About';
+import Jukebox from './Jukebox';
 
 const App = () => (
   <div>
