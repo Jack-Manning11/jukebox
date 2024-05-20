@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link, Route } from 'wouter';
-import Home from './Home';
-import About from './About';
 import Jukebox from './Jukebox';
 
 const App = () => (
@@ -19,8 +17,6 @@ const App = () => (
         </li>
       </ul>
     </nav>
-    <Route path="/" component={Home} />
-    <Route path="/about" component={About} />
     <Route path="/jukebox" component={Jukebox} />
   </div>
 );
