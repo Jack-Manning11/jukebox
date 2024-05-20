@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, Route } from 'wouter';
 import Home from './Home';
 import About from './About';
-import Login from './Login';
+import Jukebox from './Jukebox';
 
 const App = () => (
   <div>
@@ -21,7 +21,7 @@ const App = () => (
     </nav>
     <Route path="/" component={Home} />
     <Route path="/about" component={About} />
-    <Route path="/jukebox" component={Login} />
+    <Route path="/jukebox" component={Jukebox} />
   </div>
 );
 
