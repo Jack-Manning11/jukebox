@@ -1,24 +1,14 @@
 import React from 'react';
-import { Link, Route } from 'wouter';
+import { Route, Router } from 'wouter';
+
 import Jukebox from './Jukebox';
 
 const App = () => (
-  <div>
-    <nav>
-      <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/about.html">About</a>
-        </li>
-        <li>
-          <Link href="/jukebox">Jukebox</Link>
-        </li>
-      </ul>
-    </nav>
-    <Route path="/jukebox" component={Jukebox} />
-  </div>
+  <Router>
+    <div>
+      <Route path="/jukebox" component={Jukebox} />
+    </div>
+  </Router>
 );
 
 export default App;
