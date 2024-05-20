@@ -9,15 +9,6 @@ const gradientAnimation = keyframes`
   }
 `;
 
-const scrollText = keyframes`
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-250%);
-  }
-`;
-
 const GlobalStyles = styled.div`
   html {
     background-color: black;
