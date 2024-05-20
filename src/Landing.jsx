@@ -54,8 +54,8 @@ const Landing = () => {
     <div>
       <div className="nav-bar-container">
         <div className="nav-bar">
-          <Link className="nav-link on-page" href="/">HOME</Link>
-          <Link className="nav-link" href="/about.html">ABOUT</Link>
+          <a className="nav-link on-page" href="/">HOME</a>
+          <a className="nav-link" href="/about.html">ABOUT</a>
           <a className="nav-link" href="https://docs.google.com/forms/d/1KInCehTTZ-uSC-_DHUe5xv85l8g6AJ5Noz1d7AtyI0Y/viewform?edit_requested=true">CONTRIBUTE</a>
           <Link href="/jukebox" className="round-button"><i className="fa fa-play fa-1x"></i></Link>
         </div>
