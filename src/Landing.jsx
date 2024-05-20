@@ -12,12 +12,6 @@ const Landing = () => {
       return images[index];
     }
 
-    function calculateMaxScale(image) {
-      const containerWidth = image.parentElement.clientWidth;
-      const imageWidth = image.clientWidth;
-      return containerWidth / imageWidth;
-    }
-
     function isOffScreen(image) {
       const rect = image.getBoundingClientRect();
       return rect.left < 0 || rect.right > window.innerWidth;
