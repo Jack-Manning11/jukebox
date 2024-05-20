@@ -24,7 +24,6 @@ const Landing = () => {
     }
 
     function animateImage(image, container) {
-      const maxScale = calculateMaxScale(image);
       if (isOffScreen(image)) {
         image.classList.remove('enlarged');
       } else {
