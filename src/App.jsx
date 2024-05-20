@@ -9,7 +9,7 @@ const App = () => (
     <nav>
       <ul>
         <li>
-          <Link href="/">Home</Link>
+          <a href="/">Home</a>
         </li>
         <li>
           <a href="/about.html">About</a>
