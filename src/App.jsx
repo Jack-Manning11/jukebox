@@ -12,7 +12,7 @@ const App = () => (
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/about">About</Link>
+          <a href="/about.html">About</a>
         </li>
         <li>
           <Link href="/jukebox">Jukebox</Link>
