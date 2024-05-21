@@ -38,7 +38,7 @@ const useAuth = (code) => {
                 setAccessToken(access_token);
                 setExpiresIn(expires_in);
             } catch {
-                window.location = '/';
+                window.location = '/jukebox';
             }
         }, (expiresIn - 60) * 1000);
 
