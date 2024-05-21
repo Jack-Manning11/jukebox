@@ -242,7 +242,7 @@ const Dashboard = ({ code }) => {
                 </DetailsBox>
             ): null}
             <Info>
-                <a href="https://jackmanning.me/jukebox/index.html">?</a>
+                <a href="https://certainsongsarecursed.com/landing.html">?</a>
             </Info>
         </DashBoardContainer>
     );

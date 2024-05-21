@@ -18,7 +18,7 @@ const useAuth = (code) => {
                 setAccessToken(access_token);
                 setRefreshToken(refresh_token);
                 setExpiresIn(expires_in);
-                window.history.pushState({}, null, '/');
+                //window.history.pushState({}, null, '/');
             } catch (error){
                 console.log("Error: ", error);
                 //window.location = '/';
