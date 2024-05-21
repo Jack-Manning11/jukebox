@@ -213,11 +213,11 @@ const Landing = () => {
       bannerContent.style.animationDuration = `${animationDuration}s`;
     }
     updateBannerText();
-    setInterval(updateBannerText, 10000);
+    setInterval(updateBannerText, 20000); //doubled this value to try and fix scrolling timing issue
   }, []);
 
   return (
-    <div>
+    <div className='body-container'>
       <div className="nav-bar-container">
         <div className="nav-bar">
           <a className="nav-link on-page" href="/">HOME</a>
