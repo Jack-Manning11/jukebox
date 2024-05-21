@@ -8,13 +8,6 @@ html {
     font-family: Helvetica, sans-serif;
     font-size: 1.5vw;
   }
-  
-  body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 
   .body-container {
     margin: 0;

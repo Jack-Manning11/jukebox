@@ -6,6 +6,10 @@ export const DashBoardContainer = styled.div`
     width: 100%;
 `
 
+export const BackButtonLink = styled.a`
+    text-decoration: none;
+`
+
 export const PlayerContainer = styled.div`
     width: 100%;
     position: fixed;
@@ -14,20 +18,22 @@ export const PlayerContainer = styled.div`
 `
 
 export const AlbumContainer = styled.div`
-    display: flex;
-    padding-top: 10vh;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    white-space: nowrap;
-    &::-webkit-scrollbar {
-        display: none;
-    }
+  display: flex;
+  padding-top: 10vh;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  width: 100vw; /* Ensure it spans the full width of the viewport */
 
-    &::-webkit-scrollbar-track {
-        display: none;
-    }
-`
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-track {
+    display: none;
+  }
+`;
 
 
 export const Album = styled.div`

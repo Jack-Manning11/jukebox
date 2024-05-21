@@ -20,7 +20,8 @@ import {
     Info,
     DetailsBox,
     AlbumImg,
-    CurrTrack
+    CurrTrack,
+    BackButtonLink
 } from './styles/Dashboard.styles';
 
 
@@ -242,7 +243,7 @@ const Dashboard = ({ code }) => {
                 </DetailsBox>
             ): null}
             <Info>
-                <a href="https://certainsongsarecursed.com/landing.html">?</a>
+                <BackButtonLink href="https://certainsongsarecursed.com/landing.html">?</BackButtonLink>
             </Info>
         </DashBoardContainer>
     );
