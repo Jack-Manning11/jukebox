@@ -16,6 +16,39 @@ html {
     align-items: center;
     max-width: 100vw;
   }
+
+  .favicon{
+    height:50px;
+    width:50px;
+    pointer-events: none;
+  }
+
+.favicon-bg{
+  height:70px;
+  width:70px;
+  padding:10px;
+  --bg-size: 400%;
+  --color-one: rgb(239, 223, 223);
+  --color-two: rgb(128, 0, 0);
+  font-size: clamp(2rem, 20vmin, 5rem);
+  background: linear-gradient(
+      90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-one)
+    ) 0 0 / var(--bg-size) 5%;
+  color: black;
+  animation: move-bg 26s infinite linear;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display:block;
+  line-height: 5px;
+  border: 0px solid white;
+  color:rgb(239, 223, 223);
+  text-decoration:none;
+  background-color: solid black;
+  transition: all 0.3s ease;
+}
   
   .image-container {
     display: flex;
@@ -57,40 +90,63 @@ html {
     margin: 10px 0;
   }
   
-  .nav-bar-container {
-    z-index: 1000;
+  .nav-bar-container{
+    z-index:1000;
     position: sticky;
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-    left: 0;
-    top: 0;
+    width:95%;
+    display:flex;
+    flex-direction:row;
+    left:0;
+    top:0;
     padding: 1vw 0vw 1vw 0vw;
     background-color: black;
-  }
+}
+.drop-down-flex{
+  display:flex;
+  flex-direction: row;
+}
+#drop-down{
+  display:none;
+  font-size:25px;
+  margin:auto;
+  padding:6px 25px 0 .8vw;
+  cursor:pointer;
+}
   
   .nav-bar {
-    margin: 0 0 0 2.5vw;
+    margin: 0 0 0 1.3vw;
     display: flex;
     justify-content: center;
-    height: 100%;
-  }
+    height:100%;
+}
   
-  .nav-link {
-    margin: 10px 0vw 10px 0vw;
-    font-weight: bold;
-    font-size: 19px;
-    background-color: transparent;
-    color: rgb(239, 223, 223);
-    border-radius: 10%;
-    padding: 18px;
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
-  }
+.nav-link {
+  margin: auto;
+  font-weight: bold;
+  background-color: transparent;
+  color: rgb(239, 223, 223);
+  border-radius: 10%;
+  text-decoration: none;
+  /*transition: color 0.2s ease-in-out;*/
+}
   
-  .nav-link:hover {
-    color: rgb(128, 0, 0);
-  }
+.nav-link:not(.on-page):hover {
+  /*color: rgb(128, 0, 0);*/
+  --bg-size: 400%;
+  --color-one: rgb(239, 223, 223);
+  --color-two: rgb(128, 0, 0);
+  background: linear-gradient(
+      90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-one)
+    ) 0 0 / var(--bg-size) 5%;
+  color: transparent;
+  /*-webkit-text-stroke:100vw;
+  -webkit-text-stroke-color: transparent;*/
+  -webkit-background-clip: text;
+  background-clip: text;
+}
   
   .on-page {
     color: rgb(128, 0, 0);

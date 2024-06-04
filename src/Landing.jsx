@@ -219,14 +219,18 @@ const Landing = () => {
 
   return (
     <div className='body-container'>
-      <div className="nav-bar-container">
-        <div className="nav-bar">
-          <a className="nav-link on-page" href="/">HOME</a>
-          <a className="nav-link" href="/about.html">ABOUT</a>
-          <a className="nav-link" href="https://docs.google.com/forms/d/1KInCehTTZ-uSC-_DHUe5xv85l8g6AJ5Noz1d7AtyI0Y/viewform?edit_requested=true">CONTRIBUTE</a>
-          <Link href="/jukebox" className="round-button"><i className="fa fa-play fa-1x"></i></Link>
-        </div>
+      <div class="nav-bar-container">
+      <div class="nav-bar">
+          <div class="drop-down-flex">
+          <p id="drop-down" class="not-shown">☰</p>
+          <a class="nav-link" target="blank_" href="HOME LINK"><span class="favicon-bg"><img class="favicon" src="images/csac-favicon.png"/></span></a>
+          </div>
+          <a class="nav-link show-on-click" href="https://certainsongsarecursed.com">HOME</a>
+          <a class="nav-link on-page show-on-click" href="about.html">ABOUT</a>
+          <a class="nav-link show-on-click" target="_blank" href="https://docs.google.com/forms/d/1KInCehTTZ-uSC-_DHUe5xv85l8g6AJ5Noz1d7AtyI0Y/viewform?edit_requested=true">CONTRIBUTE</a>
+          <a class="nav-link show-on-click" target="_blank" href="https://certainsongsarecursed.com/jukebox">EXPLORE</a>
       </div>
+</div> 
 
       <div className="image-container" id="imageContainer">
         <img class="album-cover" src="/images/0.jpg" alt="album cover test" />
