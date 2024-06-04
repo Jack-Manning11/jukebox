@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import './styles/LandingPage.css';
-import { Link } from 'wouter';
 
 const Landing = () => {
   useEffect(() => {
@@ -223,12 +222,12 @@ const Landing = () => {
       <div class="nav-bar">
           <div class="drop-down-flex">
           <p id="drop-down" class="not-shown">☰</p>
-          <a class="nav-link" target="blank_" href="HOME LINK"><span class="favicon-bg"><img class="favicon" src="images/csac-favicon.png"/></span></a>
+          <a class="nav-link" target="blank_" href="HOME LINK"><span class="favicon-bg"><img class="favicon" src="images/csac-favicon.png" alt='favicon for csac'/></span></a>
           </div>
           <a class="nav-link show-on-click" href="https://certainsongsarecursed.com">HOME</a>
           <a class="nav-link on-page show-on-click" href="about.html">ABOUT</a>
-          <a class="nav-link show-on-click" target="_blank" href="https://docs.google.com/forms/d/1KInCehTTZ-uSC-_DHUe5xv85l8g6AJ5Noz1d7AtyI0Y/viewform?edit_requested=true">CONTRIBUTE</a>
-          <a class="nav-link show-on-click" target="_blank" href="https://certainsongsarecursed.com/jukebox">EXPLORE</a>
+          <a class="nav-link show-on-click" target="_blank" rel="noreferrer" href="https://docs.google.com/forms/d/1KInCehTTZ-uSC-_DHUe5xv85l8g6AJ5Noz1d7AtyI0Y/viewform?edit_requested=true">CONTRIBUTE</a>
+          <a class="nav-link show-on-click" target="_blank" rel="noreferrer" href="https://certainsongsarecursed.com/jukebox">EXPLORE</a>
       </div>
 </div> 
 
