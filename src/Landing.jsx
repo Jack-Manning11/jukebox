@@ -6,7 +6,7 @@ const Landing = () => {
   useEffect(() => {
     const images = document.querySelectorAll('.album-cover');
     const imageContainer = document.querySelector('.image-container');
-    const memories = ['Us driving together, and the tumultuous nature of the relationship (on again off again)',
+    /* const memories = ['Us driving together, and the tumultuous nature of the relationship (on again off again)',
     'Sad memories',
     'Being replaced',
     'The break up',
@@ -172,7 +172,7 @@ const Landing = () => {
     'Buried memories of my long distance relationship with the love of my life. I love him dearly we broke up for given circumstances. But we\'re still talking again. We actually started talking again just about 3 months ago.',
     'The song that I vividly remember playing when the guy who I thought I saw myself dating dropped me off at the airport when I moved to Europe.',
     'My ex cheated on me and kept trying to come back and then would go back to the other girl when I wouldn\'t let him and it was a cycle',
-    'This was the first song that made me happy after I was dumped'];
+    'This was the first song that made me happy after I was dumped']; */
 
     function getRandomImage() {
       const index = Math.floor(Math.random() * images.length);
@@ -201,7 +201,7 @@ const Landing = () => {
       }, 7000);
     }
     animateImage(getRandomImage(), imageContainer);
-
+    /*
     function updateBannerText() {
       const randomIndex = Math.floor(Math.random() * memories.length);
       const randomString = memories[randomIndex];
@@ -214,6 +214,7 @@ const Landing = () => {
     }
     updateBannerText();
     setInterval(updateBannerText, 20000); //doubled this value to try and fix scrolling timing issue
+    */
   }, []);
 
   return (
@@ -373,11 +374,16 @@ const Landing = () => {
         <img class="album-cover" src="/images/142.jpg" alt="album cover test" />
         <img class="album-cover" src="/images/143.jpg" alt="album cover test" />
       </div>
-      <div className="scrolling-banner">
-        <div className="banner-content">Scrolling text</div>
-      </div>
+
     </div>
   );
 };
+
+/* 
+placed in between the bottom 2 closing div tags
+<div className="scrolling-banner">
+  <div className="banner-content">Scrolling text</div>
+</div>
+*/
 
 export default Landing;
