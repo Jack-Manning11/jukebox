@@ -47,10 +47,10 @@ p {
   font-size: clamp(2rem, 20vmin, 5rem);
   background: linear-gradient(
       90deg,
-      var(--color-one),
-      var(--color-two),
-      var(--color-one)
-    ) 0 0 / var(--bg-size) 5%;
+      rgb(239, 223, 223),
+      rgb(128, 0, 0),
+      rgb(239, 223, 223)
+    ) 0 0 / 400% 5%;
   color: black;
   animation: move-bg 26s infinite linear;
   border-radius: 50%;
