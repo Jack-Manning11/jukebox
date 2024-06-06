@@ -222,7 +222,7 @@ const Landing = () => {
       <div class="nav-bar">
           <div class="drop-down-flex">
           <p id="drop-down" class="not-shown">☰</p>
-          <a class="nav-link" target="blank_" href="HOME LINK"><span class="favicon-bg"><img class="favicon" src="images/faviconFinal2.svg" alt='favicon for csac'/></span></a>
+          <a class="nav-link" target="blank_" href="HOME LINK"><span class="favicon-bg"><img class="favicon" src="images/transparent.png" alt='favicon for csac'/></span></a>
           </div>
           <a class="nav-link on-page show-on-click" href="https://certainsongsarecursed.com">HOME</a>
           <a class="nav-link show-on-click" href="about.html">ABOUT</a>
