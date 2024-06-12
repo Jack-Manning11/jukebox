@@ -220,7 +220,9 @@ const Landing = () => {
     <div className='body-container'>
       <div class="nav-bar-container">
       <div class="nav-bar">
-        <img src='./images/transparent.png' alt='testing '></img>
+        <img src='./images/transparent.png' alt='testing 2'/>
+        <img src='images/transparent.png' alt='testing 2'/>
+        <img src='images/transparent.png' alt='testing '></img>
           <div class="drop-down-flex">
           <p id="drop-down" class="not-shown">☰</p>
           <a class="nav-link" target="blank_" href="HOME LINK"><span class="favicon-bg"><img class="favicon" src="images/transparent.png" alt='favicon for csac'/></span></a>
