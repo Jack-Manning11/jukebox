@@ -220,10 +220,9 @@ const Landing = () => {
     <div className='body-container'>
       <div class="nav-bar-container">
       <div class="nav-bar">
-        <img src='./images/transparent.png' alt='testing '></img>
           <div class="drop-down-flex">
           <p id="drop-down" class="not-shown">☰</p>
-          <a class="nav-link" target="blank_" href="HOME LINK"><span class="favicon-bg"><img class="favicon" src="images/transparent.png" alt='favicon for csac'/></span></a>
+          <a class="nav-link" target="blank_" href="HOME LINK"><span class="favicon-bg"><img class="favicon" src="./src/images/transparent.png" alt='favicon for csac'/></span></a>
           </div>
           <a class="nav-link on-page show-on-click" href="https://certainsongsarecursed.com">HOME</a>
           <a class="nav-link show-on-click" href="about.html">ABOUT</a>

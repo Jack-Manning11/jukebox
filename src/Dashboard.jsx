@@ -243,7 +243,7 @@ const Dashboard = ({ code }) => {
                 </DetailsBox>
             ): null}
             <Info>
-                <BackButtonLink href="https://certainsongsarecursed.com/landing.html">?</BackButtonLink>
+                <BackButtonLink href="https://certainsongsarecursed.com">?</BackButtonLink>
             </Info>
         </DashBoardContainer>
     );

@@ -37,31 +37,31 @@ p {
     pointer-events: none;
   }
 
-.favicon-bg{
-  height:70px;
-  width:70px;
-  padding:10px;
-  --bg-size: 400%;
-  --color-one: rgb(239, 223, 223);
-  --color-two: rgb(128, 0, 0);
-  font-size: clamp(2rem, 20vmin, 5rem);
-  background: linear-gradient(
-      90deg,
-      rgb(239, 223, 223),
-      rgb(128, 0, 0),
-      rgb(239, 223, 223)
-    ) 0 0 / 400% 5%;
-  color: black;
-  animation: move-bg 26s infinite linear;
-  border-radius: 50%;
-  box-sizing: border-box;
-  display:block;
-  line-height: 5px;
-  border: 0px solid white;
-  color:rgb(239, 223, 223);
-  text-decoration:none;
-  background-color: solid black;
-  transition: all 0.3s ease;
+  .favicon-bg{
+    height:70px;
+    width:70px;
+    padding:10px;
+    --bg-size: 400%;
+    --color-one: rgb(239, 223, 223);
+    --color-two: rgb(128, 0, 0);
+    font-size: clamp(2rem, 20vmin, 5rem);
+    background: linear-gradient(
+        90deg,
+        var(--color-one),
+        var(--color-two),
+        var(--color-one)
+      ) 0 0 / var(--bg-size) 5%;
+    color: black;
+    animation: move-bg 26s infinite linear;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display:block;
+    line-height: 5px;
+    border: 0px solid white;
+    color:rgb(239, 223, 223);
+    text-decoration:none;
+    background-color: solid black;
+    transition: all 0.3s ease;
 }
   
   .image-container {

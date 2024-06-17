@@ -30,9 +30,9 @@ const TextBox = ({ songs }) => {
     }, [songs]);
   
     return (
-      <div ref={containerRef}>
+      <TextContainer ref={containerRef}>
         <p>{currentSong}</p>
-      </div>
+      </TextContainer>
     );
   };
 
