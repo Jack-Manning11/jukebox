@@ -73,6 +73,10 @@ export const SongImage = styled.img`
     width: 24vw;
 `
 
+export const BackArrow = styled.p`
+    color: #800000;
+`
+
 export const MemoryInfoCard = styled.div`
     display: flex;
     flex-direction: column;
@@ -141,6 +145,7 @@ export const TextContainer = styled.div`
 
 export const Track = styled.p`
     font-size: 28px;
+    color: #800000;
     font-family: "AvenirBlack";
     overflow: hidden;
     text-overflow: ellipsis;
@@ -152,6 +157,7 @@ export const Track = styled.p`
 
 export const Artist = styled.p`
     font-size: 18px;
+    color: #800000;
     font-family: "AvenirBold";
     padding: 10px;
 `

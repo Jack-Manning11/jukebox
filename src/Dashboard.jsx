@@ -21,7 +21,8 @@ import {
     DetailsBox,
     AlbumImg,
     CurrTrack,
-    BackButtonLink
+    BackButtonLink,
+    BackArrow
 } from './styles/Dashboard.styles';
 
 
@@ -237,7 +238,7 @@ const Dashboard = ({ code }) => {
             {show ? (
                 <DetailsBox>
                     <BackButton onClick={onBackButtonClick}>
-                        <p>&#8592;</p>
+                        <BackArrow>&#x2190;</BackArrow>
                     </BackButton>
                     <Details track={playingTrack}/>
                 </DetailsBox>
