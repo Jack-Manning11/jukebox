@@ -62,7 +62,6 @@ export const SongInfoCard = styled.div`
     align-items: center;
     justify-content: center;
     width: 35%;
-    height: calc(100vh - 90px);
     border-radius: 8px;
     text-align: center;
     background-color: #282A2A;
