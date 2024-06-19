@@ -53,7 +53,7 @@ export const DetailsContainer = styled.div`
     flex-direction: row;
     color: #EFDFDF;
     padding: 10px;
-    justify-content: space-between;
+    justify-content: space-around;
 `
 
 export const SongInfoCard = styled.div`
@@ -83,7 +83,7 @@ export const MemoryInfoCard = styled.div`
     align-items: center;
     justify-content: center;
     background-color: #282A2A;
-    width: 64%;
+    width: 62%;
     height: calc(100vh - 90px);
     border-radius: 8px;
 `
