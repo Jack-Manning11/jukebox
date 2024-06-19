@@ -70,7 +70,7 @@ export const SongInfoCard = styled.div`
 `
 
 export const SongImage = styled.img`
-    width: 24vw;
+    width: 22vw;
 `
 
 export const BackArrow = styled.p`
@@ -113,9 +113,9 @@ export const Buffer = styled.div`
 
 export const TrackName = styled.p`
     font-family: "AvenirBlack";
-    font-size: 34px;
-    padding: 10px;
-    padding-top: 15px;
+    font-size: 32px;
+    padding: 8px;
+    padding-top: 12px;
 `
 
 export const ArtistName = styled.p`
