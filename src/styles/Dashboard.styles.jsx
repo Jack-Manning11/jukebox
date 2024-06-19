@@ -115,19 +115,19 @@ export const TrackName = styled.p`
     font-family: "AvenirBlack";
     font-size: 32px;
     padding: 8px;
-    padding-top: 12px;
+    padding-top: 10px;
 `
 
 export const ArtistName = styled.p`
     font-family: "AvenirBold";
     font-size: 22px;
-    padding: 10px;
+    padding: 8px;
 `
 
 export const AlbumName = styled.p`
     font-family: "Avenir";
     font-size: 14px;
-    padding: 12px;
+    padding: 10px;
 `
 
 export const TextContainer = styled.div`
